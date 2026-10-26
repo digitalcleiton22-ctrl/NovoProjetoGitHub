@@ -1,26 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto GitHub</title>
-    <!-- Vinculação do arquivo CSS externo -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Motocar Estética Automotiva">
+  <title>Motocar | Estética Automotiva</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Projeto GitHub</h1>
-        <br>
-        <img src="./github.png" alt="GitHub Logo">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio">
+        <img src="./imagens/logotipo motocar.png" alt="Motocar Estética Automotiva">
+      </a>
 
-        <!-- <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github"></i> GitHub
-        </a> -->
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
 
-
+      <a class="phone" href="https://wa.me/5516991359135" target="_blank" rel="noopener">
+        <span>◉</span> (16) 99135-9135
+      </a>
     </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section id="inicio" class="hero">
+      <div class="services-photo placeholder-image" style="background-image:url('/imagens/bloco1.png')"></div>
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">CUIDADO QUE</span>
+          <h1>SEU CARRO<br><strong>MERECE!</strong></h1>
+          <p>Serviços de estética automotiva com qualidade, desempenho e paixão por cada detalhe.</p>
+          <a class="btn btn-red" href="https://wa.me/5516991359135" target="_blank" rel="noopener">◉ &nbsp; AGENDAR AGORA</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVIÇOS -->
+    <section id="servicos" class="services section">
+      <div class="services services-photo" style="background-image:url('./imagens/bloco2.jpeg')">
+      </div>
+      <div class="container services-inner">
+        <div class="section-heading">
+          <span class="eyebrow">NOSSOS SERVIÇOS</span>
+          <h2>Seu carro sempre<br>em sua melhor versão</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">🚗</div>
+            <h3>LAVAGEM<br>COMPLETA</h3>
+            <p>Limpeza externa e interna com produtos de alta qualidade.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">⚙</div>
+            <h3>POLIMENTO<br>TÉCNICO</h3>
+            <p>Correção de imperfeições e brilho profundo para a pintura.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">◇</div>
+            <h3>CRISTALIZAÇÃO<br>DE PINTURA</h3>
+            <p>Proteção de longa duração com brilho e efeito hidrofóbico.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">♙</div>
+            <h3>HIGIENIZAÇÃO<br>INTERNA</h3>
+            <p>Limpeza profunda de bancos, teto, carpete e painel com vapor e produtos específicos.</p>
+          </article>
+        </div>
+
+        <a class="btn btn-outline" href="#galeria">VER TODOS SERVIÇOS</a>
+      </div>
+    </section>
+
+    <!-- 3. SOBRE NÓS -->
+    <section id="sobre" class="about section">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="eyebrow">SOBRE NÓS</span>
+          <h2>Paixão por carros,<br>compromisso com você.</h2>
+          <p>A Motocar Estética Automotiva nasceu da paixão por carros e do compromisso em entregar o melhor em cada detalhe. Utilizamos produtos premium e técnicas avançadas para garantir resultados que impressionam.</p>
+          <a class="btn btn-outline" href="#contato">SAIBA MAIS</a>
+        </div>
+        <div class="about-photo placeholder-image">
+          <img src="/imagens/bloco3.png" alt="">
+          <span>Troque esta imagem em assets/sobre-nos.jpg</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. RESULTADOS / GALERIA -->
+    <section id="galeria" class="gallery section">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">NOSSOS RESULTADOS</span>
+          <h2>Confira alguns resultados</h2>
+        </div>
+
+        <div class="results-grid">
+          <figure class="result-card">
+            <img src="/imagens/higienizacaointerna.png" alt="Antes e depois da higienização interna">
+            <figcaption><span>ANTES</span><span>DEPOIS</span></figcaption>
+          </figure>
+          <figure class="result-card">
+            <img src="/imagens/pintura.png" alt="Antes e depois da pintura">
+            <figcaption><span>ANTES</span><span>DEPOIS</span></figcaption>
+          </figure>
+          <figure class="result-card">
+            <img src="/imagens/rodas.png" alt="Antes e depois da roda">
+            <figcaption><span>ANTES</span><span>DEPOIS</span></figcaption>
+          </figure>
+          <figure class="result-card">
+            <img src="/imagens/motor.png" alt="Antes e depois do motor">
+            <figcaption><span>ANTES</span><span>DEPOIS</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DEPOIMENTOS -->
+    <section id="depoimentos" class="testimonials section">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">DEPOIMENTOS</span>
+          <h2>O que nossos clientes dizem</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial">
+            <div class="avatar">LF</div>
+            <div><strong>Lucas Ferreira</strong><div class="stars">★★★★★</div></div>
+            <p>“Serviço impecável! Meu carro ficou parecendo novo. Atendimento top e muito profissional.”</p>
+          </article>
+          <article class="testimonial">
+            <div class="avatar">JM</div>
+            <div><strong>Juliana Marques</strong><div class="stars">★★★★★</div></div>
+            <p>“Fiz a cristalização e o resultado foi surpreendente. Brilho intenso e proteção de verdade!”</p>
+          </article>
+          <article class="testimonial">
+            <div class="avatar">RS</div>
+            <div><strong>Rafael Silva</strong><div class="stars">★★★★★</div></div>
+            <p>“Melhor estética automotiva da cidade! Confio e recomendo de olhos fechados.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="footer">
+    <div class="container footer-grid">
+      <div><span class="footer-icon">☎️</span><strong>(16) 99135-9135</strong><small>Agende pelo WhatsApp</small></div>
+      <div><span class="footer-icon">📍</span><strong>Nuporanga - SP</strong><small>Atendimento com hora marcada</small></div>
+      <div><span class="footer-icon">🕔</span><strong>Seg a Sex: 8h às 18h</strong><small>Sáb: 8h às 12h</small></div>
+      <div><span class="footer-icon">📲</span><strong>@motocar.estetica</strong><small>Siga nosso Instagram</small></div>
+    </div>
+  </footer>
 
 </body>
 </html>
-
